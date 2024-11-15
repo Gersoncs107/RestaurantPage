@@ -9,7 +9,9 @@ import { renderContact } from './contact.js';
 
 const contentDiv = document.getElementById('content');
 const navContent = document.getElementById('nav-content');
+const headerContent = document.getElementById("header-content")
 
+headerContent.textContent= "Spicy Restaurant"
 // Crie os botões de navegação e adicione-os ao nav
 const navLinks = ['Home', 'Menu', 'About', 'Contact'];
 navLinks.forEach(link => {
