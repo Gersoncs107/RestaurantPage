@@ -8,22 +8,22 @@ body {
 }
 
 header {
-  height: 100px;
+  height: 150px;
   background-color: #f0f0f0;
   padding: 20px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-#header-content{
+#header-content {
+  margin-left: 100px;
   background-color: red;
-  margin: 0px 900px 0px 0px;
-  padding-right: 25px;
-
+  padding: 15px;
 }
 
-#nav-content{
-  background-color:aqua;
-  margin-left: 500px;
+#nav-content {
+  background-color: aqua;
   padding: 35px;
 }
 nav button {
