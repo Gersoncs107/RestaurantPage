@@ -23,6 +23,7 @@ header {
 }
 
 #nav-content {
+  margin-bottom: 130px;
   background-color: aqua;
   padding: 35px;
 }
@@ -40,4 +41,61 @@ nav button:hover {
 
 #content {
   padding: 20px;
+}
+
+/*Slides*/
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  overflow: hidden;
+}
+
+.carousel-slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-slides img {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.carousel-dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #333;
 }
