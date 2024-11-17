@@ -8,7 +8,7 @@ body {
 }
 
 header {
-  height: 150px;
+  height: 100px;
   background-color: #f0f0f0;
   padding: 20px;
   display: flex;
@@ -23,7 +23,7 @@ header {
 }
 
 #nav-content {
-  margin-bottom: 130px;
+  margin-bottom: 100px;
   background-color: aqua;
   padding: 35px;
 }
@@ -45,6 +45,7 @@ nav button:hover {
 
 /*Slides*/
 .carousel-container {
+  margin-left: 55%;
   position: relative;
   width: 100%;
   height: auto;
@@ -53,6 +54,7 @@ nav button:hover {
 }
 
 .carousel-slides {
+  height: 400px;
   display: flex;
   transition: transform 0.5s ease;
 }
