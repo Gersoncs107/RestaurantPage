@@ -17,8 +17,15 @@ header {
 }
 
 #header-content {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 48px;
+  color: #ff4500;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transform: rotate(-5deg);
+  letter-spacing: 2px;
+  animation: glow 1.5s infinite alternate;
   margin-left: 100px;
-  background-color: red;
+  background-color: rgb(160, 226, 54);
   padding: 15px;
 }
 
