@@ -2,6 +2,7 @@
 @keyframes glow { from { text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 0 0 10px #ff4500, 0 0 20px #ff4500, 0 0 30px #ff4500; } to { text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 0 0 20px #ff4500, 0 0 30px #ff4500, 0 0 40px #ff4500; } }
 
 body {
+  background: linear-gradient(135deg, #a39f9f, #312e2e);
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -9,7 +10,7 @@ body {
 }
 
 #container{
-  background-color: #ccc;
+  background: linear-gradient(135deg, #a39f9f, #312e2e);
 }
 
 header {
@@ -44,7 +45,7 @@ nav button {
   background-color: #fff;
   border: none;
   padding: 10px 20px;
-  margin: 0 10px;
+  margin: 0 30px;
   cursor: pointer;
 }
 
