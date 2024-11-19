@@ -54,7 +54,15 @@ nav button:hover {
 }
 
 #content {
-  padding: 20px;
+  display: inline-block;
+  background-color: #cff040;
+  font-family: 'Lobster', cursive;
+  font-size: 20px;
+  text-orientation: mixed;
+  color: #333;
+  line-height: 1.2;
+  text-align: left;
+  margin: 50px 200px 0px 0px;
 }
 
 /*Slides*/
