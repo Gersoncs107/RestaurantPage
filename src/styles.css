@@ -11,6 +11,7 @@ body {
 
 #container{
   background: linear-gradient(135deg, #a39f9f, #312e2e);
+  position: relative; /* Necessário para que os filhos com posição absoluta sejam relativos a ele */
 }
 
 header {
@@ -54,14 +55,17 @@ nav button:hover {
 }
 
 #content {
-  width: 200px;
+  position: absolute;
+  top: 20px; /* Ajuste a posição */
+  left: 20px; /* Ajuste a posição */
+  width: 250px;
   display: inline-block;
   background-color: #cff040;
   font-family: 'Lobster', cursive;
-  font-size: 20px;
+  font-size: 30px;
   text-orientation: mixed;
   color: #333;
-  line-height: 1.2;
+  line-height: 1.5;
   text-align: left;
   margin: 50px 200px 0px 0px;
 }
