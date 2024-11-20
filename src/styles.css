@@ -54,6 +54,7 @@ nav button:hover {
 }
 
 #content {
+  width: 200px;
   display: inline-block;
   background-color: #cff040;
   font-family: 'Lobster', cursive;
