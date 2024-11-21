@@ -57,7 +57,7 @@ nav button:hover {
 #content {
   position: absolute;
   top: 20px; /* Ajuste a posição */
-  left: 20px; /* Ajuste a posição */
+  left: 50px; /* Ajuste a posição */
   width: 250px;
   display: inline-block;
   background-color: #cff040;
@@ -66,7 +66,7 @@ nav button:hover {
   text-orientation: mixed;
   color: #333;
   line-height: 1.5;
-  text-align: left;
+  text-align: center;
   margin: 50px 200px 0px 0px;
 }
 
