@@ -128,3 +128,33 @@ nav button:hover {
 .dot.active {
   background-color: #333;
 }
+
+/* ... */
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  #header-content {
+    font-size: 32px;
+  }
+  #content {
+    width: 100%;
+    margin: 0;
+  }
+  .carousel-container {
+    width: 100%;
+  }
+}
+
+/* Carousel Styling */
+.carousel-slides {
+  /* ... */
+  animation: slide 10s infinite;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-100%); }
+  50% { transform: translateX(-200%); }
+  75% { transform: translateX(-300%); }
+  100% { transform: translateX(0); }
+}
