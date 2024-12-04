@@ -56,7 +56,7 @@ nav button:hover {
 
 #content {
   position: absolute;
-  top: 20px; /* Ajuste a posição */
+  top: 25px; /* Ajuste a posição */
   left: 50px; /* Ajuste a posição */
   width: 250px;
   display: inline-block;
