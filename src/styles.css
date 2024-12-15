@@ -1,90 +1,56 @@
-/* style.css */
-@keyframes glow { from { text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 0 0 10px #ff4500, 0 0 20px #ff4500, 0 0 30px #ff4500; } to { text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 0 0 20px #ff4500, 0 0 30px #ff4500, 0 0 40px #ff4500; } }
-
-body {
-  background: linear-gradient(135deg, #a39f9f, #312e2e);
-  font-family: Arial, sans-serif;
+/* Reset básico */
+body, h1, h2, h3, p, div, button {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-#container{
+/* Estilo geral */
+body {
+  font-family: 'Arial', sans-serif;
   background: linear-gradient(135deg, #a39f9f, #312e2e);
-  position: relative; /* Necessário para que os filhos com posição absoluta sejam relativos a ele */
+  color: #333;
+  line-height: 1.6;
 }
 
+/* Header */
 header {
-  height: 100px;
-  background: linear-gradient(135deg, #d34848, #cff040); 
-  padding: 20px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #d34848, #cff040);
 }
 
 #header-content {
-  font-family: 'Brush Script MT', cursive;
-  font-size: 48px;
-  color: #ff4500;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  transform: rotate(-5deg);
-  letter-spacing: 2px;
-  animation: glow 1.5s infinite alternate;
-  margin-left: 100px;
-  background-color: rgb(160, 226, 54);
-  padding: 15px;
+  font-size: 24px;
+  font-weight: bold;
 }
 
-
-#nav-content {
-  margin-bottom: 100px;
-  background-color: aqua;
-  padding: 35px;
-}
 nav button {
   background-color: #fff;
-  border: none;
-  padding: 10px 20px;
-  margin: 0 30px;
+  border: 1px solid #ccc;
+  padding: 8px 15px;
+  margin: 0 5px;
   cursor: pointer;
-  transition: background-color 1s ease-out 0.25s;
+  transition: background-color 0.3s ease;
 }
 
 nav button:hover {
   background-color: #dbcdcdb7;
 }
 
-#content {
-  position: absolute;
-  top: 25px; /* Ajuste a posição */
-  left: 50px; /* Ajuste a posição */
-  width: 250px;
-  display: inline-block;
-  background-color: #cff040;
-  font-family: 'Lobster', cursive;
-  font-size: 30px;
-  text-orientation: mixed;
-  color: #333;
-  line-height: 1.5;
-  text-align: center;
-  margin: 50px 200px 0px 0px;
-}
-
-/*Slides*/
+/* Carousel */
 .carousel-container {
-  margin-left: 55%;
   position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 600px;
+  max-width: 100%;
+  margin: 20px auto;
   overflow: hidden;
 }
 
 .carousel-slides {
-  height: 400px;
   display: flex;
-  transition: transform 0.5s ease;
+  transition: transform 0.5s ease-in-out;
 }
 
 .carousel-slides img {
@@ -92,31 +58,32 @@ nav button:hover {
   flex-shrink: 0;
 }
 
-.prev, .next {
+button.prev, button.next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   color: white;
   border: none;
   padding: 10px;
   cursor: pointer;
+  z-index: 10;
 }
 
-.prev {
+button.prev {
   left: 10px;
 }
 
-.next {
+button.next {
   right: 10px;
 }
 
 .carousel-dots {
   text-align: center;
-  margin-top: 10px;
+  margin: 10px 0;
 }
 
-.dot {
+.carousel-dots span {
   display: inline-block;
   width: 10px;
   height: 10px;
@@ -124,38 +91,25 @@ nav button:hover {
   border-radius: 50%;
   margin: 0 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.dot.active {
+.carousel-dots span.active {
   background-color: #333;
 }
 
-/* ... */
-
-/* Responsiveness */
+/* Responsividade */
 @media (max-width: 768px) {
   #header-content {
-    font-size: 32px;
+      font-size: 18px;
   }
-  #content {
-    width: 100%;
-    margin: 0;
+
+  nav button {
+      padding: 6px 10px;
+      margin: 0 3px;
   }
+
   .carousel-container {
-    width: 100%;
+      max-width: 90%;
   }
-}
-
-/* Carousel Styling */
-.carousel-slides {
-  /* ... */
-  animation: slide 10s infinite;
-}
-
-@keyframes slide {
-  0% { transform: translateX(0); }
-  25% { transform: translateX(-100%); }
-  50% { transform: translateX(-200%); }
-  75% { transform: translateX(-300%); }
-  100% { transform: translateX(0); }
 }
