@@ -58,6 +58,9 @@ document.querySelector('.carousel-slides').innerHTML = `
   <img src="${image4}" alt="Slide 4">
 `;
 
+const dotsContainer = document.querySelector('.carousel-dots');
+dotsContainer.innerHTML = slides.map(() => '<span class="dot"></span>').join('');
+
 function showSlide(index) {
   // Corrigir o índice para que não ultrapasse os limites
   if (index >= slides.length) currentIndex = 0;
