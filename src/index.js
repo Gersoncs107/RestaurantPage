@@ -1,5 +1,4 @@
 import "./styles.css";
-import { greeting } from "./greeting.js";
 import image1 from '../images/image1.jpg';
 import image2 from '../images/image2.jpg';
 import image3 from '../images/image3.jpg';
@@ -122,5 +121,4 @@ autoAdvance();
 // Renderiza a aba inicial por padrão (Home)
 contentDiv.appendChild(renderHome());
 
-console.log(greeting);
 console.log("Working!")
