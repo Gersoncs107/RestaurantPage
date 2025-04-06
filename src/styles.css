@@ -115,3 +115,9 @@ button.next {
       max-width: 90%;
   }
 }
+
+@media (max-width: 480px) {
+  .carousel-container {
+    max-width: 100%;
+  }
+}
