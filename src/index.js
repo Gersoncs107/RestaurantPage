@@ -40,6 +40,9 @@ navLinks.forEach(link => {
   navContent.appendChild(navButton);
 });
 
+const homeButton = navContent.querySelector('button:first-child');
+homeButton.classList.add('active');
+
 //Image carousel
 const slides = document.querySelectorAll('.carousel-slides img');
 const prevButton = document.querySelector('.prev');
